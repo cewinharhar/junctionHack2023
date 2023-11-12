@@ -5,6 +5,6 @@ account: kevinyar
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10494980
-bundleId: 7916371
+bundleId: 7916934
 url: https://kevinyar.shinyapps.io/junctionhack2023/
 version: 1

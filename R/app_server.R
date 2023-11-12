@@ -7,9 +7,9 @@
 app_server <- function(input, output, session) {
   # Your application server logic
   
-  Sys.setenv(
-    OPENAI_API_KEY = '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'
-  )
+  #Sys.setenv(
+  #  OPENAI_API_KEY = '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'
+  #)
   
   
   globConfig <- reactiveValues()
