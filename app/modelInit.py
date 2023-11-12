@@ -5,7 +5,7 @@ from app.DQN import DQN
 # Define the DQN architecture
 # Assuming 3 inputs (heart rate, oxygen saturation, sleep data) and 5 actions
 state_size = 6
-action_size = 5
+action_size = 3
 
 # Initialize the DQN model
 dqn_model = DQN(state_size, action_size)

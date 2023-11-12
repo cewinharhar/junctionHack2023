@@ -10,10 +10,10 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
 
-    waiter::useWaiter(),
+    # waiter::useWaiter(),
 
     # waiterShowOnLoad(html = spin_fading_circles()),
-    waiter::autoWaiter(html = waiter::spin_loaders(id=8,color="#be0a28"), color="rgba(0,0,0,0)"),
+    # waiter::autoWaiter(html = waiter::spin_loaders(id=8,color="#be0a28"), color="rgba(0,0,0,0)"),
     
     # Setup Dependencies ####
     # shinyjs::useShinyjs(), # For the use of shinyjs across the app
@@ -62,6 +62,7 @@ app_ui <- function(request) {
         status = "primary",
         elevation = 3,
         fixed=TRUE,
+        collapsed = TRUE,
         
         sidebarMenu(
           

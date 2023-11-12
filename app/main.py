@@ -7,10 +7,10 @@ app = FastAPI()
 
 # Define the Pydantic model for input data
 class State(BaseModel):
-    heart_rate: float
-    resting_heart_rate: float
-    oxygen_saturation: float
-    temperature: float
+    heartrate: float
+    lowFreq: float
+    highFreq: float
+    ratio: float
     sleep: float
     mood: float
 
@@ -29,7 +29,7 @@ def hello():
 async def prevent(state: State):
     try:
         # Convert state to PyTorch tensor
-        state_tensor = torch.tensor([[state.heart_rate, state.resting_heart_rate, state.oxygen_saturation, state.temperature, state.sleep, state.mood]], dtype=torch.float32)
+        state_tensor = torch.tensor([[state.heartrate, state.lowFreq, state.highFreq, state.ratio, state.sleep, state.mood]], dtype=torch.float32)
 
         # Get the action from the model
         with torch.no_grad():
